@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-950 w-screen h-screen flex justify-center items-center box-border m-0 p-0">
+    <!-- Main Container -->
+    <div class="container bg-white w-80 h-100 rounded-2xl p-2 flex flex-col gap-3">
+        <div class="w-full flex justify-center">
+            <h1 class="font-bold text-2xl">Currency Converter</h1>
+        </div>
+        <!-- Value of the currency text-->
+        <h1 class="font-bold flex pt-2">Value</h1>
+        <!-- The actual value (input) -->
+        <input type="number" value="1" class="value-input border-2 border-red-700 rounded-2xl pl-1">
+        <!-- This div contains the from and to for currency converter (main feature) -->
+        <div class="form-container flex justify-between">
+            <!-- From div -->
+            <div class="from-container flex">
+                <img src="https://flagsapi.com/US/flat/64.png" class="img-left">
+                <select name="from" class="select-left">
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+            <!-- To div -->
+            <div class="from-container flex">
+                <img src="https://flagsapi.com/US/flat/64.png" class="img-right">
+                <select name="from" class="select-right">
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+        </div>
+        <div class="div-textresult w-auto flex flex-col justify-center items-center">
+            <span class="conversion-rate">1 USD = 320 PKR</span>
+        </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body> 
+</html>
+
+<!-- <img src="https://flagsapi.com/US/flat/64.png"> -->
